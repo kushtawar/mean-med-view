@@ -1,9 +1,11 @@
 {
+    "family": "medangularapptask",
     "containerDefinitions": [
         {
-            "name": "medviewcontainer",
             "image": "https://916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedviewrepo:v_%BUILD_NUMBER%",
-            "memoryReservation": "512",
+            "name": "medangularappcontainer",
+            "cpu": 10,
+            "memory": 256,
             "essential": true,
             "portMappings": [
                 {
@@ -11,27 +13,10 @@
                     "containerPort": "4200",
                     "protocol": "tcp"
                 }
-            ],
-            "environment": null,
-            "mountPoints": null,
-            "volumesFrom": null,
-            "hostname": null,
-            "user": null,
-            "workingDirectory": null,
-            "extraHosts": null,
-            "logConfiguration": null,
-            "ulimits": null,
-            "dockerLabels": null
+            ]
         }
-    ],
-    "volumes": [],
-    "networkMode": null,
-    "memory": null,
-    "cpu": null,
-    "placementConstraints": [],
-    "family": "medangularapptask"
+    ]
 }
-
 
 
 
