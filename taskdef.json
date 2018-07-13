@@ -7,8 +7,8 @@
         {
             "name": "medviewcontainer",
             "image": "https://916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedviewrepo:v_%BUILD_NUMBER%",
-            "cpu": "",
-            "memory": "",
+            "cpu": 0.25,
+            "memory": 512,
             "memoryReservation": 512,
             "links": [
                 ""
