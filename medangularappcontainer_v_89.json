@@ -1,0 +1,21 @@
+[
+{
+    "family": "medangularapptask",
+    "containerDefinitions": [
+        {
+            "image": "https://916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedviewrepo:v_89",
+            "name": "medangularappcontainer",
+            "cpu": 10,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": "80",
+                    "containerPort": "4200",
+                    "protocol": "tcp"
+                }
+            ]
+        }
+    ]
+}
+]

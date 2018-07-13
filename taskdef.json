@@ -1,24 +1,71 @@
 [
-{
-    "family": "medangularapptask",
-    "containerDefinitions": [
-        {
-            "image": "https://916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedviewrepo:v_%BUILD_NUMBER%",
-            "name": "medangularappcontainer",
-            "cpu": 10,
-            "memory": 256,
-            "essential": true,
+    {
+        "executionRoleArn": null,
+        "containerDefinitions": [
+          {
+            "dnsSearchDomains": null,
+            "logConfiguration": null,
+            "entryPoint": null,
             "portMappings": [
                 {
                     "hostPort": "80",
                     "containerPort": "4200",
                     "protocol": "tcp"
                 }
-            ]
-        }
+            ],
+            "command": null,
+            "linuxParameters": null,
+            "cpu": 0,
+            "environment": [],
+            "ulimits": null,
+            "dnsServers": null,
+            "mountPoints": [],
+            "workingDirectory": null,
+            "dockerSecurityOptions": null,
+            "memory": null,
+            "memoryReservation": 512,
+            "volumesFrom": [],
+            "image": "https://916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedviewrepo:v_%BUILD_NUMBER%",
+            "disableNetworking": null,
+            "healthCheck": null,
+            "essential": true,
+            "links": null,
+            "hostname": null,
+            "extraHosts": null,
+            "user": null,
+            "readonlyRootFilesystem": null,
+            "dockerLabels": null,
+            "privileged": null,
+            "name": "medangularappcontainer"
+          }
+        ],
+        "placementConstraints": [],
+        "memory": null,
+        "taskRoleArn": null,
+        "compatibilities": [
+          "EC2"
+        ],
+        "taskDefinitionArn": "arn:aws:ecs:ap-south-1:916262176087:task-definition/12qweq:1",
+        "family": "medangularapptask",
+        "requiresAttributes": [
+          {
+            "targetId": null,
+            "targetType": null,
+            "value": null,
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+          },
+          {
+            "targetId": null,
+            "targetType": null,
+            "value": null,
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+          }
+        ],
+        "requiresCompatibilities": null,
+        "networkMode": null,
+        "cpu": null,
+        "revision": 1,
+        "status": "ACTIVE",
+        "volumes": []
+      }
     ]
-}
-]
-
-
-
