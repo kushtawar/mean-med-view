@@ -6,7 +6,7 @@
     "containerDefinitions": [
         {
             "name": "medviewcontainer",
-            "image": "https://916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedviewrepo:latest",
+            "image": "https://916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedviewrepo:v_%BUILD_NUMBER%",
             "cpu": 0,
             "memory": 0,
             "memoryReservation": 0,
