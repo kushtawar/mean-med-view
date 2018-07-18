@@ -3,7 +3,7 @@
     "containerDefinitions": [
       {
         "image": "916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedrepo:latest",
-        "name": "meanmedrepo71",
+        "name": "meanmedrepo102",
         "cpu": 10,
         "memoryReservation": 300,
         "essential": true,
