@@ -2,8 +2,8 @@
     "family": "medangularapptask",
     "containerDefinitions": [
       {
-        "image": "meanmedapprepo:latest",
-        "name": "medangularappcontainer",
+        "image": "https://916262176087.dkr.ecr.ap-south-1.amazonaws.com/meanmedrepo:latest",
+        "name": "meanmedrepo",
         "cpu": 10,
         "memoryReservation": 300,
         "essential": true,
