@@ -9,7 +9,7 @@ import { Product } from './product.model';
 export class ProductService {
   selectedProduct: Product;
   products: Product[];
-  readonly baseURL = 'http://localhost:3000/products';
+  readonly baseURL = 'http://13.127.110.85:3000/products';
 
   constructor(private http: HttpClient) { }
 
